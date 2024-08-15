@@ -104,20 +104,48 @@ body{
     font-weight: 400;
 }
 
-@media (max-width: 1200px) {
-    .cabecalho{
-        padding: 10%;
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 5%;
+        text-align: center;
     }
-    
+
     .cabecalho__menu {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
         justify-content: center;
     }
 
     .apresentacao {
         flex-direction: column-reverse;
         padding: 5%;
+        gap: 20px; 
     }
+
     .apresentacao__conteudo {
-        width: auto;
+        width: 100%; 
     }
-} 
+
+    .apresentacao__imagem {
+        width: 100%; 
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1.2rem; 
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.75rem;
+    }
+    
+    .apresentacao__conteudo__texto {
+        font-size: 1.2rem; 
+    }
+
+    .apresentacao__links__navegacao {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
